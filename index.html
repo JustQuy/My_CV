@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CV — [Tên Bạn]</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/avatar.jpg" alt="[Tên Bạn]" class="avatar">
+        <div class="intro">
+          <h1 id="name">Tên Bạn</h1>
+          <p class="tagline">Một câu mô tả ngắn về bạn — ví dụ: "Sinh viên CNTT | Front-end developer" </p>
+        </div>
+      </div>
+
+      <button id="menu-toggle" class="menu-toggle" aria-label="Mở menu">☰</button>
+
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#hobbies">Sở thích</a></li>
+          <li><a href="#links">Liên kết</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="container section about">
+      <h2>Giới thiệu</h2>
+      <p>
+        Xin chào — mình là <strong id="name-duplicate">Tên Bạn</strong>. Đây là CV online dạng one-page. Thêm đoạn văn ngắn mô tả bản thân, chuyên môn, hoặc mục tiêu nghề nghiệp.
+      </p>
+    </section>
+
+    <section id="hobbies" class="container section hobbies">
+      <h2>Sở thích</h2>
+      <div class="hobby-list">
+        <article class="hobby-card">
+          <!-- icon: inline SVG giúp không cần tải font -->
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2 5 5 .5-4 3 1.2 5L12 14l-6.2 1.5L7 10 3 7.5 8 7z"/></svg>
+          </div>
+          <h3>Đọc sách</h3>
+          <p>Thích các sách kỹ thuật và tiểu thuyết.</p>
+        </article>
+
+        <article class="hobby-card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9 9 0 0 0-9 9c0 5 9 11 9 11s9-6 9-11a9 9 0 0 0-9-9z"/></svg>
+          </div>
+          <h3>Du lịch</h3>
+          <p>Khám phá vùng mới, chụp ảnh phong cảnh.</p>
+        </article>
+
+        <article class="hobby-card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21l-8-6V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v10l-8 6z"/></svg>
+          </div>
+          <h3>Lập trình</h3>
+          <p>Thử nghiệm UI/UX, làm web nhỏ với HTML/CSS/JS.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="links" class="container section links">
+      <h2>Liên kết</h2>
+      <ul class="social-list">
+        <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> — [Tên Bạn]. Làm bằng HTML, CSS, JS.</p>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Chuyển giao diện">🌓</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
